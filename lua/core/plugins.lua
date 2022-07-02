@@ -320,8 +320,12 @@ local astro_plugins = {
       require("configs.session_manager").config()
     end,
   },
+
   -- Gnuplot
   ["vim-scripts/gnuplot.vim"] = {},
+
+  -- markdown
+  ["dhruvasagar/vim-table-mode"] = {},
 }
 
 local packer = astronvim.initialize_packer()
