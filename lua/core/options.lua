@@ -1,7 +1,7 @@
 if not vim.tbl_contains(vim.fn.getcompletion("", "color"), colorscheme) then
   colorscheme = "tokyonight"
 end
-vim.api.nvim_command(("colorscheme %s"):format(colorscheme))
+pcall(vim.cmd, "colorscheme " .. colorscheme)
 
 astronvim.vim_opts({
   opt = {
