@@ -326,6 +326,9 @@ local astro_plugins = {
 
   -- markdown
   ["dhruvasagar/vim-table-mode"] = {},
+
+  -- real time format
+  ["skywind3000/vim-rt-format"] = {},
 }
 
 local packer = astronvim.initialize_packer()

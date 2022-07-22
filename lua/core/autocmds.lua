@@ -107,6 +107,15 @@ cmd({ "BufWritePost" }, {
   command = "!gnuplot <afile>",
 })
 
+-- python
+augroup("python", { clear = true })
+cmd({ "BufEnter" }, {
+  desc = "Real time format",
+  group = "python",
+  pattern = "*.py",
+  command = "RTFormatEnable",
+})
+
 
 create_command("AstroUpdate", astronvim.update, { desc = "Update AstroNvim" })
 create_command("ToggleHighlightURL", astronvim.toggle_url_match, { desc = "Toggle URL Highlights" })
